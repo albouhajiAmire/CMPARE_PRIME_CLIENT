@@ -158,12 +158,7 @@ const Index = () => {
 
                   {
                     ({ touched, errors, isValid, dirty }) => (
-
                       <Form>
-
-
-
-
                         <div className="input-wrapper">
                           <div className="input-field">
                             <label htmlFor="">{t("Fullname")}*</label>
@@ -214,11 +209,7 @@ const Index = () => {
                             <li>2500</li>
                           </ul>
                           <small className="input-error" style={{ color: "tomato", display: (!Franchise.touch && Franchise.sub) ? "block" : "none" }}>{t("Franchise field is required")}</small>
-
                         </div>
-
-
-
                         <div className="input-wrapper">
                           <div className="input-field">
                             <label htmlFor="">{t("postcode or home address")}*</label>

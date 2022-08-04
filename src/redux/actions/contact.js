@@ -6,9 +6,8 @@ import {  Create } from "../../services/contact"
 
 const create_contact = (values) => async dispatch => {
     dispatch({ type: START_LOADING })
-
+    
     Create(values).then(({ data }) => {
-
         if (!data.err) {
             dispatch({ type: STOP_LOADING })
             dispatch({
